@@ -1,6 +1,8 @@
 import pandas as pd
+
 # Load the dataset
 data = pd.read_csv('startup_growth_investment_data.csv')
+
 # Display the first few rows of the dataset to verify the changes
 print(data.head())
 # display the last few rows of the dataset to verify the changes
