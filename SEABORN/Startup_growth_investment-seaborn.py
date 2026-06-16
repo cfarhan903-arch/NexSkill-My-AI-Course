@@ -23,6 +23,7 @@ plt.xlabel('Year', fontsize=12)
 plt.ylabel('Amount / Number', fontsize=12)
 plt.legend()
 plt.show()
+
 # other themes
 sns.set_style("darkgrid")  
 plt.figure(figsize=(10, 6)) 
@@ -32,6 +33,7 @@ plt.xlabel('Year', fontsize=12)
 plt.ylabel('Amount / Number', fontsize=12)  
 plt.legend()
 plt.show()
+
 sns.set_style("dark")  
 plt.figure(figsize=(10, 6)) 
 sns.lineplot(x='Year', y='Funding Amount (Billion USD)', data=df, marker='o', label='Funding Amount')
@@ -40,6 +42,7 @@ plt.xlabel('Year', fontsize=12)
 plt.ylabel('Amount / Number', fontsize=12)
 plt.legend()
 plt.show()
+
 sns.set_style("white")  
 plt.figure(figsize=(10, 6)) 
 sns.lineplot(x='Year', y='Funding Amount (Billion USD)', data=df, marker='o', label='Funding Amount')
@@ -48,6 +51,7 @@ plt.xlabel('Year', fontsize=12)
 plt.ylabel('Amount / Number', fontsize=12)
 plt.legend()
 plt.show()
+
 # customize the theme
 sns.set_style("whitegrid", {'axes.facecolor': 'lightblue'}) 
 plt.figure(figsize=(10, 6))
@@ -57,6 +61,7 @@ plt.xlabel('Year', fontsize=12)
 plt.ylabel('Amount / Number', fontsize=12)
 plt.legend()    
 plt.show()
+
 # load the dataset
 data = pd.read_csv('startup_growth_investment_data.csv')
 # display the types of the dataset
