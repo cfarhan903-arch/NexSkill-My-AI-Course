@@ -279,3 +279,34 @@ future_result = pd.DataFrame({
 })
 future_result.to_csv("Future_Prediction.csv", index=False)
 print("Future prediction saved to Future_Prediction.csv")
+
+## Project Summary
+
+'''In this project, I built a machine learning time series forecasting model
+to predict the future closing price of SpaceX (SPCX) stock using historical
+stock market data. I started by loading the dataset and exploring it by viewing
+the first few rows, dataset information, summary statistics, and checking for missing
+values to better understand the data.'''
+
+'''Next, I converted the Datetime column into a proper date format and sorted the dataset
+in chronological order. I then performed feature engineering by creating lag features, 
+moving averages (MA), exponential moving averages (EMA), volatility, daily returns, and 
+the Relative Strength Index (RSI). These features help the models learn stock price trends 
+and patterns.'''
+
+'''After preparing the data, I split it into training and testing sets while maintaining the 
+time order. I used TimeSeriesSplit for cross-validation because it is more suitable for time series 
+data than random splitting. I also used GridSearchCV to find the best hyperparameters for the Random Forest model.'''
+
+'''I trained and compared multiple regression models, including Linear Regression, Ridge, Lasso, ElasticNet, Decision Tree,
+Random Forest, Extra Trees, Gradient Boosting, AdaBoost, K-Nearest Neighbors, and Support Vector Regressor. 
+I evaluated each model using RMSE, MAE, MAPE, and R² Score to identify the most accurate model.'''
+
+'''After selecting the best-performing model, I analyzed its feature importance, saved the trained model using
+Joblib, and created visualizations such as the model comparison chart, actual vs. predicted stock prices, and 
+the residual error plot.'''
+
+'''Finally, I generated a prediction for the next 30-minute closing price using the latest stock information
+and compared the future predictions from all trained models. This project helped me understand the complete 
+machine learning workflow for time series forecasting, including feature engineering, model comparison, 
+hyperparameter tuning, evaluation, visualization, and future prediction.'''
