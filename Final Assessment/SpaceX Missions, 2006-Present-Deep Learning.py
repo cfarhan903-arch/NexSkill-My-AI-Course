@@ -670,3 +670,29 @@ print(f"Total Records : {len(data)}")
 print(f"Total Features : {X.shape[1]}")
 print(f"Target Classes : {classes}")
 print(f"Best Model : {best_model_name}")
+
+
+## Project Summary
+
+'''In this project, I developed a "deep learning classification model" to predict the "Mission Outcome"
+using the SpaceX launch dataset. I started by loading the dataset and exploring it by checking its shape, 
+data types, missing values, duplicate records, and summary statistics. I also created different visualizations 
+to better understand the data, such as the distributions of mission outcomes, vehicle types, launch sites, 
+payload mass, customer countries, and payload orbits.'''
+
+'''After understanding the dataset,I cleaned the data by filling missing values, removing duplicate records,
+and creating new features such as "Launch Year", "Launch Month", "Launch Hour", "Weekend Launch", 
+"Heavy Payload", "International Customer", and "Rocket Generation". I encoded all categorical variables
+using "Label Encoding" and applied "StandardScaler" and "MinMaxScaler" to prepare the data for deep learning.'''
+
+'''Next, I trained "five different Artificial Neural Network (ANN) models", including a Baseline ANN, Deep ANN, 
+Dropout ANN, Batch Normalization ANN, and L2 Regularized ANN. I used "Early Stopping" and "Reduce Learning Rate" 
+callbacks to improve training and reduce overfitting.'''
+
+'''I evaluated all models using "Accuracy, Precision, Recall, F1-Score, Classification Report, and Confusion Matrix".
+I compared their performance, selected the best-performing model, and tested it on unseen data. Finally, I saved the best model
+for future use and displayed the actual and predicted mission outcomes.'''
+
+'''This project helped me understand the complete deep learning workflow, including data exploration, preprocessing, 
+feature engineering,ANN model development, performance evaluation, model comparison, and saving the final trained model.'''
+
