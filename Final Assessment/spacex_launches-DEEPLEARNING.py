@@ -181,3 +181,33 @@ if prediction > 0.5:
     print("Predicted Launch: SUCCESS")
 else:
     print("Predicted Launch: FAILURE")
+
+    ## Project Summary
+
+'''In this project, I developed a deep learning model to predict 
+whether a SpaceX launch would be successful or unsuccessful using 
+historical launch data. I started by loading the dataset and exploring
+it by checking its shape, data types, summary statistics, missing values, 
+and duplicate records. This helped me understand the dataset before training 
+the model.'''
+
+'''Next, I cleaned the data by filling missing values, removing duplicate 
+records, and performing feature engineering by extracting the launch year 
+and launch month from the launch date. I then encoded the categorical features 
+using Label Encoding and standardized the input features using StandardScaler to 
+improve model performance.'''
+
+'''After preprocessing, I split the dataset into training and testing sets and built
+an Artificial Neural Network (ANN) with multiple hidden layers and Dropout to reduce
+overfitting. I used the Adam optimizer, binary cross-entropy loss, and Early Stopping
+to train the model efficiently and prevent unnecessary training once the validation 
+performance stopped improving.'''
+
+'''Finally, I evaluated the model using Accuracy Score, Confusion Matrix, Classification 
+Report, and the ROC Curve with AUC. I also plotted the training and validation accuracy 
+and loss to monitor the learning process. After selecting the final model, I saved it and
+used it to predict whether a new SpaceX launch would be a success or failure.'''
+
+'''This project helped me understand the complete deep learning workflow, including data
+preprocessing, feature engineering, ANN model development, performance evaluation, 
+visualization, and binary classification prediction.'''
