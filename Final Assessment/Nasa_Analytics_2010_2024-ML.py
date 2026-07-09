@@ -180,3 +180,24 @@ print("\n--- 2026 Prediction Across All Models ---")
 for name, mdl in models.items():
     pred_val = mdl.predict(future_scenario)[0]
     print(f"{name:28s}: {pred_val:.1f} launches")
+
+# Project Summary
+'''In this project, I built a machine learning model to predict the number of NASA launches using historical data 
+from 2010 to 2024. I first imported the required libraries and explored the dataset by viewing its first few rows,
+summary statistics, and checking for missing values. This helped me understand the data before building the models.'''
+
+'''Next, I visualized the relationship between Launches and Employees using a line graph. Then, I prepared the data
+by selecting the input features, removing unnecessary columns, and splitting the dataset into training and testing sets.'''
+
+'''I trained and compared multiple regression models, including Linear Regression, Random Forest, Decision Tree, 
+Gradient Boosting,KNN, SVR, Extra Trees, AdaBoost, and others. For models that require feature scaling,
+I used StandardScaler with a Pipeline. I evaluated each model using 5-fold cross-validation, R² Score, RMSE,
+and MAE to find the most accurate model.'''
+
+'''After comparing the results, I fine-tuned the Random Forest model using GridSearchCV to improve its performance.
+I then evaluated the optimized model on the test data and visualized the feature importance and the relationship
+between actual and predicted launch values.'''
+
+'''Finally, I used the optimized model to predict the expected number of NASA launches in 2026 and compared the predictions
+from all the trained models. This project helped me understand the complete machine learning workflow, from data analysis 
+and model evaluation to hyperparameter tuning and future prediction.'''
